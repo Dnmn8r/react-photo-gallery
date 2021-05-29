@@ -1,3 +1,9 @@
+# Forked by Mark Kerollos
+* This is a fork of react-photo-gallery that aims to make it more compatible with
+* simple-react-lightbox, by building the returned components with a thumbnail.
+* This also improves rendering since it can render the grid using thumbnails and
+* only load the full images when the lightbox is opened.
+
 # React Photo Gallery
 
 [![Join the chat at https://gitter.im/react-photo-gallery/Lobby](https://badges.gitter.im/react-photo-gallery/Lobby.svg)](https://gitter.im/react-photo-gallery/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

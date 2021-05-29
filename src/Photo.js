@@ -14,14 +14,19 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left, key }) => 
   const handleClick = event => {
     onClick(event, { photo, index });
   };
-
   return (
-    <img
-      key={key}
-      style={onClick ? { ...imgStyle, ...imgWithClick } : imgStyle}
-      {...photo}
-      onClick={onClick ? handleClick : null}
-    />
+    <a href={photo.src} data-attribute="SRL" thumbnail={photo.thumbnail}>
+      <img
+        key={key}
+        src={photo.thumbnail}
+        height={photo.height}
+        width={photo.width}
+        decoding="async"
+        style={onClick ? { ...imgStyle, ...imgWithClick } : imgStyle}
+        onClick={onClick ? handleClick : null}
+        alt=""
+      />
+    </a>
   );
 };
 
