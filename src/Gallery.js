@@ -129,5 +129,4 @@ Gallery.defaultProps = {
   direction: 'row',
   targetRowHeight: 300,
 };
-export { Photo };
-export default Gallery;
+export { Photo, Gallery };
