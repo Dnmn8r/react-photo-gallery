@@ -15,9 +15,8 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left, key }) => 
     onClick(event, { photo, index });
   };
   return (
-    <a href={photo.src} data-attribute="SRL" thumbnail={photo.thumbnail}>
+    <a href={photo.src} data-attribute="SRL" thumbnail={photo.thumbnail} key={photo.key}>
       <img
-        key={photo.key}
         src={photo.thumbnail}
         height={photo.height}
         width={photo.width}
